@@ -72,7 +72,7 @@ void add (char nm[20])
     struct node *temp;
 
 	temp = (struct node *)malloc(sizeof(struct node));
-	temp -> name = nm;
+	temp -> name[20] = nm[20];
     //temp -> next = NULL;
 
     if (head == NULL)
