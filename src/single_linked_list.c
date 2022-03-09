@@ -1,6 +1,6 @@
 /*
 
-Module: singly_linked_list.c
+Module: single_linked_list.c
 
 Function:
     To create a Menu to add, delete and display names in a linked list.
@@ -23,8 +23,7 @@ Author:
 */
 
 #include <stdio.h>
-#include <conio.h>
-#include <process.h>
+#include <string.h>
 #include <stdlib.h>
 
 struct node
@@ -50,14 +49,10 @@ Function:
     To add new names on the list.
 
 Definition:
-TYPE name(
-TYPE arg1, brief description of arg1
-TYPE arg2 brief description of arg2);
+void add (character type argument);
 
 Description:
-    By getting names from user, we insert those names in the end of the list. If the list is empty, 
-    we are inserting our new name in HEAD, if our list is not empty, we traverse through the list and after reaching the NULL, 
-    we inserting our Name there and making the next node of new node as NULL.
+    It is a void function which returns no value. The character type argument is used here to store "string".
 
 Returns:
     Functions returning type void: Nothing.
@@ -66,14 +61,28 @@ Returns:
 
 void add (char nm[20])
     {
+    /*int val[20];
+
+    val[20];
+
+    val[21] = 1;
+    printf("%d\n", val[21]);*/
+
     /*printf("Enter the Name : ");
     scanf("%s",nm);*/
 
+    printf("You selected Insertion of Name... \n");
+    printf("Now Enter the Name: ");
+	scanf("%s", nm);
+
     struct node *temp;
 
-	temp = (struct node *)malloc(sizeof(struct node));
-	temp -> name[20] = nm[20];
-    //temp -> next = NULL;
+	temp = (struct node *) malloc (sizeof (struct node));
+    //printf("%s\n", nm);
+	//temp -> name[20];
+    temp -> next = NULL;
+    strcpy(temp -> name, nm);
+    //strcpy(nm, name);
 
     if (head == NULL)
 	    {
@@ -119,6 +128,18 @@ Returns:
 
 void delete(char del[20])
     {
+    /*printf("You selected Deletion of Name... \n");
+
+    printf("Enter the Name need to be deleted: ");
+    fgets(del, sizeof(del), stdin);*/
+
+    printf("You selected Deletion of Name... \n");
+
+    printf("Enter the Name need to be deleted: ");
+	scanf("%s", del);
+
+    //printf("%s\n", del);
+
     if (head == NULL)
 	    {
 		printf("List is Empty, Deletion is not Possible!!\n");
@@ -128,7 +149,8 @@ void delete(char del[20])
 		struct node *p;
 
 		ptr = head;
-		while(ptr -> name[20] != del[20])
+        strcmp (ptr -> name, del);
+		while (ptr -> name, del != 0)
 		    {
 			p = ptr;
 			ptr = ptr -> next;
@@ -162,23 +184,25 @@ Returns:
 */
 
 void display()
-    {
+        {
         if (head == NULL)
 	        {
-		    printf("List is Empty\n");
+		    printf("\n");
 	        }
 	    else
 	        {
 		    ptr = head;
 		    while( ptr != NULL)
 		        {
-			    printf("-> %s", ptr -> name[20]);
+                //printf("-> ");
+                //puts(ptr -> name[20]);
+			    printf("-> %s", ptr -> name);
 
 			    ptr = ptr -> next;
 		        }
 		    printf("\n");
 	        }
-    }
+        }
 
 /****************************************************************************\
 |
@@ -205,11 +229,6 @@ void main()
             {
             case 1:
 				{
-                printf("You selected Insertion of Name... \n");
-
-				printf("Now Enter the Name: ");
-				scanf("%s", &nm);
-
 				add(nm);
                 //printf("The list after addition is: \n");
 
@@ -219,11 +238,6 @@ void main()
 
             case 2:
                 {
-                printf("You selected Deletion of Name... \n");
-
-                printf("Enter the Name need to be deleted: ");
-				scanf("%s", &del);
-
 				delete(del);
                 //printf("The list after deletion is: \n");
 
