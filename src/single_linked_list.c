@@ -49,10 +49,12 @@ Function:
     To add new names on the list.
 
 Definition:
-void add (character type argument);
+    VOID add (
+        CHAR name[20], character array of size 20 to store string data
+        );
 
 Description:
-    It is a void function which returns no value. The character type argument is used here to store "string".
+    It is a void function which returns no value. The character type argument is used here to store "strings" from user in a list.
 
 Returns:
     Functions returning type void: Nothing.
@@ -77,20 +79,36 @@ void add (char nm[20])
 
     struct node *temp;
 
+    printf("The address of temp before memory alloc: %p \n", temp);
+
 	temp = (struct node *) malloc (sizeof (struct node));
+
+    printf("The address of temp after malloc: %p \n", temp);
+
     //printf("%s\n", nm);
 	//temp -> name[20];
     temp -> next = NULL;
     strcpy(temp -> name, nm);
     //strcpy(nm, name);
 
+    printf("The address of temp before cond: %p \n", temp);
+
+    printf("The address of ptr before cond: %p \n", ptr);
+
+    printf("the names is: %s \n", nm);
+
     if (head == NULL)
 	    {
 		head = temp;
+        printf("The address of temp after if cond: %p \n", temp);
+
+        printf("The address of ptr after if cond: %p \n", ptr);
 	    }
     else
         {
         ptr = head;
+        printf("The address of ptr after ptr = head: %p \n", ptr);
+
 		while(ptr -> next != NULL)
 		    {
 			ptr = ptr -> next;
@@ -98,6 +116,10 @@ void add (char nm[20])
 
 		ptr -> next = temp;
 		temp -> next = NULL;
+
+        printf("The address of temp after else cond: %p \n", temp);
+
+        printf("The address of ptr after else cond: %p \n", ptr);
         }
     }
 
@@ -106,20 +128,16 @@ void add (char nm[20])
 Name: delete()
 
 Function:
-    To delete a given name on the list.
+    To delete a given name from the list.
 
 Definition:
-TYPE name(
-TYPE arg1, brief description of arg1
-TYPE arg2 brief description of arg2);
+    VOID delete(
+        CHAR del[20], character array of size 20 to get string value from user for deletion purpose
+        );
 
 Description:
-    First Get names from user which has to be deleted, by using pointer, 
-    we traverse through the list of elements and delete the exact Name which was typed by user. 
-    After deletion, if it is HEAD node, we simply change next node as HEAD node, if its end node, 
-    by using the pointer *p, we make the last previous node as last node and after the last node is NULL. 
-    If the deletion is happening in between, the previous node and next node will join together leaving 
-    the current node out of list. Now this current node can be deleted.
+    It is a void function which returns no value. The character type argument is used to store "string"
+    for comparing with main list of string and to delete the matching string.
 
 Returns:
     Functions returning type void: Nothing.
@@ -139,26 +157,46 @@ void delete(char del[20])
 	scanf("%s", del);
 
     //printf("%s\n", del);
+    printf("The name to be deleted is: %s \n", del);
 
-    if (head == NULL)
+    printf("The address of ptr before cond: %p \n", ptr);
+
+    /*if (head == NULL)
 	    {
 		printf("List is Empty, Deletion is not Possible!!\n");
 	    }
 	else
-	    {
+	    {*/
+
 		struct node *p;
 
+        printf("The address of p before p = ptr: %p \n", p);
+
 		ptr = head;
-        strcmp (ptr -> name, del);
-		while (ptr -> name, del != 0)
+        p = ptr;
+
+        printf("The address of ptr after else cond: %p \n", ptr);
+
+        printf("The address of p after p = ptr cond: %p \n", p);
+
+        int comp = strcmp (ptr -> name, del);
+        printf("strcmp OP is: %d \n", comp);
+
+		while (strcmp (ptr -> name, del) != 0)
 		    {
-			p = ptr;
 			ptr = ptr -> next;
+
+            printf("The address of ptr inside while cond: %p \n", ptr);
 		    }
 
-		p -> next = ptr -> next;
-		free(ptr);
-	    }
+        printf("The address of p after while loop: %p \n", p);
+
+        p -> next = ptr -> next;
+		free (ptr);
+
+        printf("The address of p after p -> next: %p \n", p);
+
+        printf("The address of ptr after free: %p \n", ptr);
     }
 
 /*
@@ -169,14 +207,10 @@ Function:
     To display all the entries in a List.
 
 Definition:
-TYPE name(
-TYPE arg1, brief description of arg1
-TYPE arg2 brief description of arg2);
+VOID display (void);
 
 Description:
-    First it checks if the list is empty or not. If it is empty, then it prints "List is Empty" message.
-    If the list contains elements, using pointer *ptr, 
-    we traverse through all the elements one by one and print all elements.
+    This function has no return value and no arguments. It is used to display the list whenever the function is called.
 
 Returns:
     Functions returning type void: Nothing.
@@ -212,6 +246,10 @@ void display()
 
 void main()
     {
+    void add(char name[20]);
+    void delete(char del[20]);
+    void display();
+
 	char nm[20], del[20];
     int ch;
 
@@ -238,9 +276,16 @@ void main()
 
             case 2:
                 {
-				delete(del);
-                //printf("The list after deletion is: \n");
+                if (head == NULL)
+	                {
+		            printf("List is Empty, Deletion is not Possible!!\n");
+	                }
+	            else
+                    {
+				    delete(del);
+                    }
 
+                //printf("The list after deletion is: \n");
 				display();
 				break;
 				}
@@ -251,127 +296,7 @@ void main()
 			default:
 				printf("Invalid Entry!!\n");
                 printf("\n");
+                break;
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*struct symbtab *p;
-        p=malloc(sizeof(struct symbtab));
-        strcpy(p->label,l);
-        printf("Enter the address : ");
-        scanf("%d",&p->addr);
-        p->next=null;*/
-	
-    
-    
-    /*strcpy
-    temp->name=value;
-
-	if (head== NULL)
-	    {
-		head=temp;
-	    }
-	else
-	    {
-		ptr=head;
-		while(ptr->next != NULL)
-		{
-			ptr=ptr->next;
-		}
-		ptr->next=temp;
-		temp->next=NULL;
-	    }
-    }*/
-
-
-/*
-int main()
-    {
-    char choice;
-
-    void add();
-    void delete();
-    void display();
-
-    while(1)
-        {
-        printf("a. Add Entry\nb. Delete Entry\nc. Display");
-
-        printf("Enter your choice(a or b or c): ");
-        scanf("%c", &choice);
-
-        switch(choice)
-            {
-            case '1':
-                add();
-                break;
-            case '2':
-                delete();
-                break;
-            case '3':
-                display();
-                break;
-            default:
-                printf("Wrong Choice!\n");
-
-            }
-            return 0;
-        }
-    }
-
-void add()
-    {
-    char person[50];
-
-    temp = (struct node*)malloc(sizeof(struct node));
-
-    printf("Enter name: ");
-    scanf("%d", &person[50]);
-
-    temp -> name[50] = person[50];
-    temp -> next = NULL;
- 
-    if(start == NULL)            //If list is empty
-        {
-        start = temp;
-        }
-    else
-        {
-        q = start;
-        while(q -> next != NULL)
-            {
-            q = q -> next;
-            q -> next = temp;
-            }
-        }
-        
-        return 0;
-    }*/
