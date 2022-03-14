@@ -204,6 +204,11 @@ void main()
 
     int ch;
 
+    printf("\n");
+    printf("-----------------------------------------------------\n");
+    printf("This is single-linked-list.exe v1.0.0\n");
+    printf("-----------------------------------------------------\n");
+    printf("\n");
     printf("======== MENU ======== \n");
     printf("1. Add Entry: \n");
     printf("2. Delete Entry: \n");
