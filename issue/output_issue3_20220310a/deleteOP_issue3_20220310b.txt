@@ -1,0 +1,731 @@
+PS E:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src> cd "e:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src\" ; if ($?) { gcc single_linked_list.c -o single_linked_list } ; if ($?) { .\single_linked_list }
+1. Add Entry:
+2. Delete Entry:
+3. Display Entries:
+4. exit
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000347f00
+The address of temp before cond: 0000000000347f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of temp after if cond: 0000000000347f00
+The address of ptr after if cond: 0000000000000000
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000347f30
+The address of temp before cond: 0000000000347f30
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000347f00
+The address of temp after else cond: 0000000000347f30
+The address of ptr after else cond: 0000000000347f00
+-> ajay-> jana
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: visahl
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000347f60
+The address of temp before cond: 0000000000347f60
+The address of ptr before cond: 0000000000000000
+the names is: visahl
+The address of ptr after ptr = head: 0000000000347f00
+The address of temp after else cond: 0000000000347f60
+The address of ptr after else cond: 0000000000347f30
+-> ajay-> jana-> visahl
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: ajay
+The name to be deleted is: ajay
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000347f00
+The address of p after p = ptr cond: 0000000000347f00
+strcmp OP is: 0
+-> É4-> jana-> visahl
+Enter the Choice:
+3
+PS E:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src> cd "e:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src\" ; if ($?) { gcc single_linked_list.c -o single_linked_list } ; if ($?) { .\single_linked_list }
+1. Add Entry:
+2. Delete Entry:
+3. Display Entries:
+4. exit
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000117f00
+The address of temp before cond: 0000000000117f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of temp after if cond: 0000000000117f00
+The address of ptr after if cond: 0000000000000000
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000117f30
+The address of temp before cond: 0000000000117f30
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000117f00
+The address of temp after else cond: 0000000000117f30
+The address of ptr after else cond: 0000000000117f00
+-> ajay-> jana
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: ajay
+The name to be deleted is: ajay
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000117f00
+The address of p after p = ptr cond: 0000000000117f00
+strcmp OP is: 0
+The address of ptr after free: 0000000000117f00
+-> `?-> jana
+Enter the Choice:
+3
+PS E:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src> cd "e:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src\" ; if ($?) { gcc single_linked_list.c -o single_linked_list } ; if ($?) { .\single_linked_list }
+1. Add Entry:
+2. Delete Entry:
+3. Display Entries:
+4. exit
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000567f00
+The address of temp before cond: 0000000000567f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of temp after if cond: 0000000000567f00
+The address of ptr after if cond: 0000000000000000
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000567f30
+The address of temp before cond: 0000000000567f30
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000567f00
+The address of temp after else cond: 0000000000567f30
+The address of ptr after else cond: 0000000000567f00
+-> ajay-> jana
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: ajay
+The name to be deleted is: ajay
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000567f00
+The address of p after p = ptr cond: 0000000000567f00
+strcmp OP is: 0
+The address of ptr after free: 0000000000567f00
+-> `V-> jana
+Enter the Choice:
+3
+PS E:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src> cd "e:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src\" ; if ($?) { gcc single_linked_list.c -o single_linked_list } ; if ($?) { .\single_linked_list }
+1. Add Entry:
+2. Delete Entry:
+3. Display Entries:
+4. exit
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000005b7f00
+The address of temp before cond: 00000000005b7f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of temp after if cond: 00000000005b7f00
+The address of ptr after if cond: 0000000000000000
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000005b7f30
+The address of temp before cond: 00000000005b7f30
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 00000000005b7f00
+The address of temp after else cond: 00000000005b7f30
+The address of ptr after else cond: 00000000005b7f00
+-> ajay-> jana
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: ajay
+The name to be deleted is: ajay
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 00000000005b7f00
+The address of p after p = ptr cond: 00000000005b7f00
+strcmp OP is: 0
+The address of ptr after free: 00000000005b7f00
+-> ajay-> jana
+Enter the Choice:
+3
+PS E:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src> cd "e:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src\" ; if ($?) { gcc single_linked_list.c -o single_linked_list } ; if ($?) { .\single_linked_list }
+1. Add Entry:
+2. Delete Entry:
+3. Display Entries:
+4. exit
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000357f00
+The address of temp before cond: 0000000000357f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of temp after if cond: 0000000000357f00
+The address of ptr after if cond: 0000000000000000
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000357f30
+The address of temp before cond: 0000000000357f30
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000357f00
+The address of temp after else cond: 0000000000357f30
+The address of ptr after else cond: 0000000000357f00
+-> ajay-> jana
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: jana
+The name to be deleted is: jana
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000357f00
+The address of p after p = ptr cond: 0000000000357f00
+strcmp OP is: -1
+The address of ptr inside while cond: 0000000000357f30
+The address of ptr inside while cond: 0000000000000000
+PS E:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src> cd "e:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src\" ; if ($?) { gcc single_linked_list.c -o single_linked_list } ; if ($?) { .\single_linked_list }
+1. Add Entry:
+2. Delete Entry:
+3. Display Entries:
+4. exit
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000004a7f00
+The address of temp before cond: 00000000004a7f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of temp after if cond: 00000000004a7f00
+The address of ptr after if cond: 0000000000000000
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000004a7f30
+The address of temp before cond: 00000000004a7f30
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 00000000004a7f00
+The address of temp after else cond: 00000000004a7f30
+The address of ptr after else cond: 00000000004a7f00
+-> ajay-> jana
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: vishal
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000004a7f60
+The address of temp before cond: 00000000004a7f60
+The address of ptr before cond: 0000000000000000
+the names is: vishal
+The address of ptr after ptr = head: 00000000004a7f00
+The address of temp after else cond: 00000000004a7f60
+The address of ptr after else cond: 00000000004a7f30
+-> ajay-> jana-> vishal
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: vishal
+The name to be deleted is: vishal
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 00000000004a7f00
+The address of p after p = ptr cond: 00000000004a7f00
+strcmp OP is: -1
+The address of ptr inside while cond: 00000000004a7f30
+The address of ptr inside while cond: 00000000004a7f60
+The address of ptr inside while cond: 0000000000000000
+PS E:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src> cd "e:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src\" ; if ($?) { gcc single_linked_list.c -o single_linked_list } ; if ($?) { .\single_linked_list }
+1. Add Entry:
+2. Delete Entry:
+3. Display Entries:
+4. exit
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000577f00
+The address of temp before cond: 0000000000577f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of temp after if cond: 0000000000577f00
+The address of ptr after if cond: 0000000000000000
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000577f30
+The address of temp before cond: 0000000000577f30
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 0000000000577f30
+The address of ptr after else cond: 0000000000577f00
+-> ajay-> jana
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: vishal
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000577f60
+The address of temp before cond: 0000000000577f60
+The address of ptr before cond: 0000000000000000
+the names is: vishal
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 0000000000577f60
+The address of ptr after else cond: 0000000000577f30
+-> ajay-> jana-> vishal
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: harish
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000577f90
+The address of temp before cond: 0000000000577f90
+The address of ptr before cond: 0000000000000000
+the names is: harish
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 0000000000577f90
+The address of ptr after else cond: 0000000000577f60
+-> ajay-> jana-> vishal-> harish
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: nishanth
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000003966b0
+The address of temp before cond: 00000000003966b0
+The address of ptr before cond: 0000000000000000
+the names is: nishanth
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 00000000003966b0
+The address of ptr after else cond: 0000000000577f90
+-> ajay-> jana-> vishal-> harish-> nishanth
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: vishal
+The name to be deleted is: vishal
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000577f00
+The address of p after p = ptr cond: 0000000000577f00
+strcmp OP is: -1
+The address of ptr inside while cond: 0000000000577f30
+The address of ptr inside while cond: 0000000000577f60
+The address of ptr after free: 0000000000577f60
+-> ajay-> harish-> nishanth
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000577f60
+The address of temp before cond: 0000000000577f60
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 0000000000577f60
+The address of ptr after else cond: 00000000003966b0
+-> ajay-> harish-> nishanth-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000003966e0
+The address of temp before cond: 00000000003966e0
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 00000000003966e0
+The address of ptr after else cond: 0000000000577f60
+-> ajay-> harish-> nishanth-> ajay-> jana
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: vishal
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000396710
+The address of temp before cond: 0000000000396710
+The address of ptr before cond: 0000000000000000
+the names is: vishal
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 0000000000396710
+The address of ptr after else cond: 00000000003966e0
+-> ajay-> harish-> nishanth-> ajay-> jana-> vishal
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: harish
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000396740
+The address of temp before cond: 0000000000396740
+The address of ptr before cond: 0000000000000000
+the names is: harish
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 0000000000396740
+The address of ptr after else cond: 0000000000396710
+-> ajay-> harish-> nishanth-> ajay-> jana-> vishal-> harish
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: nishanth
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000396770
+The address of temp before cond: 0000000000396770
+The address of ptr before cond: 0000000000000000
+the names is: nishanth
+The address of ptr after ptr = head: 0000000000577f00
+The address of temp after else cond: 0000000000396770
+The address of ptr after else cond: 0000000000396740
+-> ajay-> harish-> nishanth-> ajay-> jana-> vishal-> harish-> nishanth
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: harish
+The name to be deleted is: harish
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000577f00
+The address of p after p = ptr cond: 0000000000577f00
+strcmp OP is: -1
+The address of ptr inside while cond: 0000000000577f90
+The address of ptr after free: 0000000000577f90
+-> ajay-> nishanth-> ajay-> jana-> vishal-> harish-> nishanth
+Enter the Choice:
+3
+PS E:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src> cd "e:\Training\GitHub\Single-Linked-List\issue1\Single-Linked-List\src\" ; if ($?) { gcc single_linked_list.c -o single_linked_list } ; if ($?) { .\single_linked_list }
+1. Add Entry:
+2. Delete Entry:
+3. Display Entries:
+4. exit
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000317f00
+The address of temp before cond: 0000000000317f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of temp after if cond: 0000000000317f00
+The address of ptr after if cond: 0000000000000000
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000317f30
+The address of temp before cond: 0000000000317f30
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 0000000000317f30
+The address of ptr after else cond: 0000000000317f00
+-> ajay-> jana
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: vishal
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000317f60
+The address of temp before cond: 0000000000317f60
+The address of ptr before cond: 0000000000000000
+the names is: vishal
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 0000000000317f60
+The address of ptr after else cond: 0000000000317f30
+-> ajay-> jana-> vishal
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: harish
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000317f90
+The address of temp before cond: 0000000000317f90
+The address of ptr before cond: 0000000000000000
+the names is: harish
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 0000000000317f90
+The address of ptr after else cond: 0000000000317f60
+-> ajay-> jana-> vishal-> harish
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: nishanth
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b66b0
+The address of temp before cond: 00000000006b66b0
+The address of ptr before cond: 0000000000000000
+the names is: nishanth
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b66b0
+The address of ptr after else cond: 0000000000317f90
+-> ajay-> jana-> vishal-> harish-> nishanth
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: harish
+The name to be deleted is: harish
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000317f00
+The address of p after p = ptr cond: 0000000000317f00
+strcmp OP is: -1
+The address of ptr inside while cond: 0000000000317f30
+The address of ptr inside while cond: 0000000000317f60
+The address of ptr inside while cond: 0000000000317f90
+The address of ptr after free: 0000000000317f90
+-> ajay-> nishanth
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000317f90
+The address of temp before cond: 0000000000317f90
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 0000000000317f90
+The address of ptr after else cond: 00000000006b66b0
+-> ajay-> nishanth-> jana
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: vishal
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b66e0
+The address of temp before cond: 00000000006b66e0
+The address of ptr before cond: 0000000000000000
+the names is: vishal
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b66e0
+The address of ptr after else cond: 0000000000317f90
+-> ajay-> nishanth-> jana-> vishal
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: harish
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b6710
+The address of temp before cond: 00000000006b6710
+The address of ptr before cond: 0000000000000000
+the names is: harish
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b6710
+The address of ptr after else cond: 00000000006b66e0
+-> ajay-> nishanth-> jana-> vishal-> harish
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: ajay
+The name to be deleted is: ajay
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000317f00
+The address of p after p = ptr cond: 0000000000317f00
+strcmp OP is: 0
+The address of ptr after free: 0000000000317f00
+-> @gk-> nishanth-> jana-> vishal-> harish
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: ajay
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 0000000000317f00
+The address of temp before cond: 0000000000317f00
+The address of ptr before cond: 0000000000000000
+the names is: ajay
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 0000000000317f00
+The address of ptr after else cond: 0000000000317f00
+-> ajay
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b6740
+The address of temp before cond: 00000000006b6740
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b6740
+The address of ptr after else cond: 0000000000317f00
+-> ajay-> jana
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: harish
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b6770
+The address of temp before cond: 00000000006b6770
+The address of ptr before cond: 0000000000000000
+the names is: harish
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b6770
+The address of ptr after else cond: 00000000006b6740
+-> ajay-> jana-> harish
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: vishal
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b67a0
+The address of temp before cond: 00000000006b67a0
+The address of ptr before cond: 0000000000000000
+the names is: vishal
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b67a0
+The address of ptr after else cond: 00000000006b6770
+-> ajay-> jana-> harish-> vishal
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: jana
+The name to be deleted is: jana
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000317f00
+The address of p after p = ptr cond: 0000000000317f00
+strcmp OP is: -1
+The address of ptr inside while cond: 00000000006b6740
+The address of ptr after free: 00000000006b6740
+-> ajay-> harish-> vishal
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: jana
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b6740
+The address of temp before cond: 00000000006b6740
+The address of ptr before cond: 0000000000000000
+the names is: jana
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b6740
+The address of ptr after else cond: 00000000006b67a0
+-> ajay-> harish-> vishal-> jana
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: vishal
+The name to be deleted is: vishal
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000317f00
+The address of p after p = ptr cond: 0000000000317f00
+strcmp OP is: -1
+The address of ptr inside while cond: 00000000006b6770
+The address of ptr inside while cond: 00000000006b67a0
+The address of ptr after free: 00000000006b67a0
+-> ajay-> jana
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: vishal
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b67a0
+The address of temp before cond: 00000000006b67a0
+The address of ptr before cond: 0000000000000000
+the names is: vishal
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b67a0
+The address of ptr after else cond: 00000000006b6740
+-> ajay-> jana-> vishal
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: harish
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b67d0
+The address of temp before cond: 00000000006b67d0
+The address of ptr before cond: 0000000000000000
+the names is: harish
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b67d0
+The address of ptr after else cond: 00000000006b67a0
+-> ajay-> jana-> vishal-> harish
+Enter the Choice:
+1
+You selected Insertion of Name...
+Now Enter the Name: nihsanth
+The address of temp before memory alloc: 0000000000000001
+The address of temp after malloc: 00000000006b6800
+The address of temp before cond: 00000000006b6800
+The address of ptr before cond: 0000000000000000
+the names is: nihsanth
+The address of ptr after ptr = head: 0000000000317f00
+The address of temp after else cond: 00000000006b6800
+The address of ptr after else cond: 00000000006b67d0
+-> ajay-> jana-> vishal-> harish-> nihsanth
+Enter the Choice:
+2
+You selected Deletion of Name...
+Enter the Name need to be deleted: nihsanth
+The name to be deleted is: nihsanth
+The address of ptr before cond: 0000000000000000
+The address of p before p = ptr: 0000000000000001
+The address of ptr after else cond: 0000000000317f00
+The address of p after p = ptr cond: 0000000000317f00
+strcmp OP is: -1
+The address of ptr inside while cond: 00000000006b6740
+The address of ptr inside while cond: 00000000006b67a0
+The address of ptr inside while cond: 00000000006b67d0
+The address of ptr inside while cond: 00000000006b6800
+The address of ptr after free: 00000000006b6800
+-> ajay

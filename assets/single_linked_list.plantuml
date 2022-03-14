@@ -1,0 +1,32 @@
+@startuml
+
+start
+
+: Create a Structure;
+: Display Menu;
+: Get input choice;
+
+while (while the choice is not exit) is (yes)
+
+: Switch choice;
+fork
+-> case 1;
+: Insertion;
+
+fork again
+-> case 2;
+: Deletion;
+
+fork again
+-> case 3;
+: Display;
+
+end fork
+
+: Get input choice;
+
+endwhile (no)
+
+stop
+
+@enduml
