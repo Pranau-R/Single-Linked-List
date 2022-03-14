@@ -5,10 +5,6 @@
 
 The task contains following Directories:
 
-- app:
-
-	It contains the application.exe. We can simply run our program using this application.
-
 - assets:
 	
 	Assets are flowchart files. We created our flowchart for the task using Plantuml and stored it here.
