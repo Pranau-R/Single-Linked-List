@@ -32,7 +32,7 @@ struct node
     struct node *next;
     };
 
-struct node *head, *ptr;
+struct node *head = NULL, *ptr;
 
 /****************************************************************************\
 |
@@ -49,7 +49,7 @@ Function:
 
 Definition:
     void add (
-        char name[20], character array of size 20 to store string data
+        No arguments
         );
 
 Description:
@@ -63,38 +63,25 @@ Returns:
 void add ()
     {
     char insert_name[20];
-    /*printf("Enter the Name : ");
-    scanf("%s",nm);*/
 
     printf("You selected Insertion of Name... \n");
 
-    printf("Enter the Name : ");
+    printf("Enter a Name you wish to Add: ");
     scanf("%s", insert_name);
 
     struct node *temp;
-    //temp = head;
 
     temp = (struct node *) malloc (sizeof (struct node));
-    temp -> next = NULL;
     strcpy(temp -> name, insert_name);
-
-    /*printf("The address of temp before cond: %p \n", temp);
-
-    printf("The address of ptr before cond: %p \n", ptr);
-
-    printf("the names is: %s \n", nm);*/
 
     if (head == NULL)
         {
         head = temp;
-        /*printf("The address of temp after if cond: %p \n", temp);
-
-        printf("The address of ptr after if cond: %p \n", ptr);*/
+        temp -> next = NULL;
         }
     else
         {
         ptr = head;
-        //printf("The address of ptr after ptr = head: %p \n", ptr);
 
         while(ptr -> next != NULL)
             {
@@ -103,10 +90,6 @@ void add ()
 
         ptr -> next = temp;
         temp -> next = NULL;
-
-        //printf("The address of temp after else cond: %p \n", temp);
-
-        //printf("The address of ptr after else cond: %p \n", ptr);
         }
     }
 
@@ -120,7 +103,7 @@ Function:
 
 Definition:
     void delete(
-        char delete_name[20], character array of size 20 to get string value from user for deletion purpose
+        No Arguments
         );
 
 Description:
@@ -137,40 +120,16 @@ void delete()
     char delete_name[20];
 
     printf("You selected Deletion of Name... \n");
-    printf("Enter a Name you wish to delete: \n");
+    printf("Enter a Name you wish to delete: ");
     scanf("%s", delete_name);
-
-    /*printf("Enter the Name need to be deleted: ");
-    fgets(del, sizeof(del), stdin);*/
-
-    //printf("%s\n", del);
-    //printf("The name to be deleted is: %s \n", delete_name);
-
-    //printf("The address of ptr before cond: %p \n", ptr);
-
-    /*if (head == NULL)
-        {
-        printf("List is Empty, Deletion is not Possible!!\n");
-        }
-    else
-        {*/
 
     struct node *prev;
 
     ptr = head;
     prev = ptr;
 
-    /*printf("The address of ptr after else cond: %p \n", ptr);
-
-    printf("The address of prev after prev = ptr cond: %p \n", prev);
-
-    int comp = strcmp (ptr -> name, delete_name);
-    printf("strcmp OP is: %d \n", comp);*/
-
     while (strcmp (delete_name, ptr -> name) != 0)
         {
-        //printf("The address of ptr inside while cond: %p \n", ptr);
-
         if(ptr -> next == NULL)
             {
             printf("The name you entered is not present in the List!!\n");
@@ -181,7 +140,6 @@ void delete()
             prev = ptr;
             ptr = ptr -> next;
             }
-        //prev = ptr;
         }
 
     if (ptr == head)
@@ -192,14 +150,10 @@ void delete()
         {
         prev -> next = ptr -> next;
         }
-    
+
     free (ptr);
     ptr = NULL;
     }
-        //printf("The address of p after while loop: %p \n", prev);
-        /*printf("The address of p after p -> next: %p \n", prev);
-
-        printf("The address of ptr after free: %p \n", ptr);*/
 
 /*
 
@@ -209,7 +163,9 @@ Function:
     To display all the entries in a List.
 
 Definition:
-void display (void);
+void display (
+        No Arguments
+        );
 
 Description:
     This function has no return value and no arguments. It is used to display the list whenever the function is called.
@@ -221,23 +177,17 @@ Returns:
 
 void display()
     {
-        if (head == NULL)
-            {
-            printf("\n");
-            }
-        else
-            {
-            ptr = head;
-            while ( ptr -> next != NULL)
-                {
-                //printf("-> ");
-                //puts(ptr -> name[20]);
-                printf("-> %s", ptr -> name);
-                ptr = ptr -> next;
-                }
+    ptr = head;
+    printf("%s", ptr -> name);
 
-            printf("\n");
-            }
+    while ( ptr -> next != NULL)
+        {
+        ptr = ptr -> next;
+        printf(" -> %s", ptr -> name);
+        }
+
+    printf("\n");
+    printf("\n");
     }
 
 /****************************************************************************\
@@ -252,13 +202,14 @@ void main()
     void delete();
     void display();
 
-    //char insert_name[20], delete_name[20];
     int ch;
 
+    printf("======== MENU ======== \n");
     printf("1. Add Entry: \n");
     printf("2. Delete Entry: \n");
     printf("3. Display Entries: \n");
     printf("4. exit \n");
+    printf("\n");
 
     while(1)
         {
@@ -270,8 +221,6 @@ void main()
             case 1:
                 {
                 add();
-                //printf("The list after addition is: \n");
-
                 display();
                 break;
                 }
@@ -287,13 +236,12 @@ void main()
                     delete();
                     display();
                     }
-
-                //printf("The list after deletion is: \n");
                 break;
                 }
 
             case 3:
                 display();
+                break;
 
             case 4:
                 exit(0);
@@ -302,7 +250,6 @@ void main()
                 printf("Invalid Entry!!\n");
 
                 printf("\n");
-                break;
             }
         }
     }
